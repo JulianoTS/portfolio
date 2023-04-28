@@ -1,0 +1,58 @@
+CREATE TABLE aluno(
+nome VARCHAR(30) NOT NULL,
+idade int NOT NULL,
+turma VARCHAR(2) NOT NULL,
+itinerario VARCHAR(100) NOT NULL,
+cpf_pk VARCHAR(15) NOT NULL,
+PRIMARY KEY(cpf_pk)
+)
+
+CREATE TABLE professor(
+  nome VARCHAR(30) NOT NULL,
+  idade int NOT NULL,
+  area_ensino VARCHAR(20) NOT NULL,
+  cpf_pk VARCHAR(15) not NULL,
+  PRIMARY KEY(cpf_pk)
+  )
+
+CREATE TABLE faculdade(
+  nome VARCHAR(50) NOT NULL,
+  endereco VARCHAR(100) NOT NULL,
+  cnpj_pk VARCHAR(20) NOT NULL,
+  grau_escolaridade VARCHAR(20) NOT NULL,
+  cpf_aluno_fk VARCHAR(15) NOT NULL,
+  cpf_professor_fk VARCHAR(15) NOT NULL,
+  PRIMARY KEY(cnpj_pk),
+  FOREIGN KEY (cpf_aluno_fk) REFERENCES aluno(cpf_pk),
+  FOREIGN KEY (cpf_professor_fk) REFERENCES professor(cpf_pk)
+  )
+  
+  CREATE TABLE curriculo(
+    experiencias VARCHAR(100) NOT NULL,
+    diplomas_pk VARCHAR(100) NOT NULL,
+    habilidades VARCHAR(100) NOT NULL,
+    cpf_professor_fk VARCHAR(15) NOT NULL,
+    PRIMARY KEY(diplomas_pk),
+  FOREIGN KEY (cpf_professor_fk) REFERENCES professor(cpf_pk)
+    )
+  
+  INSERT INTO aluno (nome, idade, turma, itinerario, cpf_pk) 
+  VALUES ('leonardo', 16, '2c', 'integrado desenvolvimento de sistemas', '123456789-01'),
+  ('juliano', 16, '2c', 'integrado desenvolvimento de sistemas', '123456789-00')
+  
+  INSERT INTO professor (nome, idade, area_ensino, cpf_pk)
+  VALUES ('guilherme', 38, 'portugues', '123456123-00'),
+  ('bruno', 40, 'matematica', '123456456-00')
+  
+  INSERT INTO faculdade(nome, endereco, cnpj_pk, grau_escolaridade, cpf_aluno_fk, cpf_professor_fk)
+  VALUES ('wendola', 'rua wendel hang 69', '765827358375', 'ensino medio', '123456789-00', '123456123-00')
+  ('jaumzola', 'rua jaum azous 96', '123445436676', 'ensino superior', '123456456_00')
+  
+  INSERT INTO curriculo(experiencias, diplomas_pk, habilidades, cpf_professor_fk)
+  VALUES ('trabalhou em varias outras escolas', 'formado em letras e fez doutorado em letras', 'me expresso muito bem e sei falar em publico', '123456123-00')
+  ('trabalhei como contador de banco', 'formado em matematica e fiz doutorado em matematica', 'explico bem e procuro mostrar mais de uma maneira de pensar', '123456456-00')
+  
+  SELECT " FROM aluno
+  SELECT " FROM professor
+  SELECT " FROM faculdade
+  SELECT " FROM curriculo

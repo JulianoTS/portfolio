@@ -1,0 +1,169 @@
+Existem quatro princípios básicos, quais são?
+Comente sobre cada um deles, explicando com
+exemplos.
+R: Disponibilidade, Integridade, Autenticidade e
+Confidencialidade Confidencialidade: Este princípio se
+refere à proteção de informações sensíveis ou críticas
+contra o acesso ou divulgação não autorizados. Por
+exemplo, um banco pode armazenar as informações
+financeiras de seus clientes com criptografia,
+garantindo que apenas funcionários autorizados
+possam acessá-las.Confidencialidade: Este princípio
+se refere à proteção de informações sensíveis ou
+críticas contra o acesso ou divulgação não
+autorizados. Por exemplo, um banco pode armazenar
+as informações financeiras de seus clientes com
+criptografia, garantindo que apenas funcionários
+autorizados possam acessá-las.
+Integridade: A integridade se refere à proteção de
+informações contra modificação, exclusão ou
+destruição não autorizadas. Por exemplo, uma
+empresa pode implementar controles de acesso
+rigorosos para garantir que somente funcionários
+autorizados possam alterar informações de clientes
+em um banco de dados.
+Disponibilidade: A disponibilidade se refere à garantia
+de que informações e recursos estejam sempre
+disponíveis para usuários autorizados quando
+necessários. Por exemplo, um sistema de
+armazenamento em nuvem pode ter backups e
+redundância para garantir que os usuários possam
+acessar seus arquivos a qualquer momento, mesmo
+em caso de falhas.
+Autenticidade: A autenticidade se refere à garantia de
+que as informações são genuínas e não foram
+alteradas ou falsificadas. Por exemplo, um site de
+
+comércio eletrônico pode usar certificados SSL/TLS
+para garantir que as informações do cliente, como
+nome e número do cartão de crédito, sejam autênticas
+e não tenham sido manipuladas por terceiros mal-
+intencionados.
+
+Bob envia a mensagem “Oi, tudo bem?” para Alice;
+A mensagem foi interceptada no meio do caminho;
+Após a interceptação, foi alterada para:
+“Oi tudo bem!”
+Qual ou quais princípios de Segurança da Informação
+foram violados? Explique!
+R: Autenticidade e Confidencialidade, pois a mensagem
+não foi de acordo com o que o remetente estava querendo
+falar, e mudaram a frase.
+Bob captura a chave do email de Alice;
+Bob envia um email para Ted em nome de Alice;
+Qual ou quais princípios de Segurança da Informação
+foram violados? Explique!
+R: Confidencialidade: A confidencialidade é violada quando
+Bob captura a chave do email de Alice e consegue acessar
+informações privadas dela, incluindo a capacidade de
+enviar e-mails em nome dela sem sua permissão.
+Integridade: A integridade é violada quando Bob envia um
+email em nome de Alice para Ted sem a permissão dela.
+Isso pode resultar em informações errôneas ou maliciosas
+sendo transmitidas para Ted, o que pode levar a más
+decisões. Autenticidade: A autenticidade é violada quando
+Bob envia um e-mail em nome de Alice sem a permissão
+dela, pois isso permite que Bob se faça passar por Alice e
+
+envie informações falsas ou maliciosas para Ted.
+Disponibilidade: A disponibilidade é afetada se o acesso de
+Bob à chave de e-mail de Alice impedir que ela aqcesse
+seu próprio e-mail ou cause a perda de informações
+importantes.
+
+Crie uma situação hipotética de um caso em que
+ocorra a violação de três ou mais princípios de
+
+Segurança da Informação.
+
+Uma empresa que processa dados de clientes para fins de
+faturamento e pagamento é vítima de uma violação de
+segurança da informação. Um hacker conseguiu invadir o
+sistema da empresa e obteve acesso aos dados dos
+clientes.
+
+Se algum software malicioso derrubar o serviço da
+Netflix, qual foi o princípio violado? Explique!
+O princípio de disponibilidade foi violado.
+A disponibilidade é um aspecto crucial da Segurança da
+Informação e é importante garantir que as medidas
+adequadas de segurança sejam implementadas para
+manter os sistemas e serviços disponíveis para os usuários
+autorizados.
+
+Cite um exemplo de cumprimento de cada princípio de
+Segurança da Informação.
+Disponibilidade
+Integridade
+Confidencialidade
+Autenticidade
+Disponibilidade: Uma empresa pode garantir a
+disponibilidade de seus serviços de TI implementando
+redundância de hardware e software para que, em caso de
+falha em um servidor ou aplicativo, outro esteja pronto para
+assumir.
+Integridade: A integridade pode ser garantida através da
+implementação de controles de acesso para garantir que
+apenas usuários autorizados tenham permissão para
+modificar ou excluir informações. Confidencialidade: A
+confidencialidade pode ser mantida através da
+implementação de controles de acesso baseados em
+função, criptografia de dadose firewall.
+Autenticidade: através do uso de autenticação forte, como
+a verificação em duas etapas, biometria, ou mesmo senhas
+complexas.
+O que é um Sistema Operacional?
+Um Sistema Operacional (SO) é um software que gerencia
+o hardware e o software de um computador. Ele fornece
+uma interface entre o usuário e o hardware, permitindo que
+os usuários executem programas e realizem tarefas em um
+computador.
+Quais são os três objetivos principais?
+defina-os.
+Gerenciamento de recursos.
+Execução de programas.
+Fornecimento de uma interface do usuário.
+
+O que são Periféricos e componentes?
+Periféricos e componentes são dispositivos físicos que são
+conectados a um computador para fornecer funções
+adicionais.
+Cite 5 funcionalidades de um Sistema
+Operacional
+Gerenciamento de recursos
+Gerenciamento de arquivos
+Controle de acesso
+Comunicação
+Gerenciamento de energia
+O que é e para que serve o Kernel de um
+Sistema Operacional?
+O Kernel é o núcleo do sistema operacional e é
+responsável por gerenciar recursos de hardware e fornecer
+uma interface para os aplicativos interagirem com o
+hardware. Ele é responsável pelo controle do acesso ao
+hardware, pela gerência da memória, pelo agendamento de
+processos e por outras funções críticas do sistema
+operacional. O Kernel é uma parte essencial do sistema
+operacional, sem o qual os aplicativos não seriam capazes
+de interagir com o hardware do computador.
+
+Na área de trabalho, crie um diretório com seu nome,
+dentro do diretório deverá conter outros 3 diretórios
+com os nomes(Principal, Copiar, Mover), dentro do
+diretório principal crie 3 arquivos, onde, o primeiro não
+tem nada é apenas um arquivo vazio, o segundo
+quando criado já terá o texto “com informação” no
+ultimo será um arquivo de sua preferencia(.txt) pode ou
+não ter texto dentro. Quais os comandos utilizados
+para realizar essas tarefas, listar todos eles em ordem.
+
+R :
+mkdir &lt;seu_nome&gt;
+cd &lt;seu_nome&gt;
+mkdir Principal
+mkdir Copiar
+mkdir Mover
+touch Principal/arquivo1
+echo &quot;com informação&quot; &gt; Principal/arquivo2
+touch Principal/arquivo3.txt
+ls -R
